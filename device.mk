@@ -275,3 +275,6 @@ PRODUCT_PACKAGES += \
     hostapd_default.conf \
     hostapd.accept \
     hostapd.deny
+
+# Inherit from oppo-common
+-include device/oppo/common/BoardConfigCommon.mk
