@@ -129,12 +129,6 @@ OVERRIDE_RS_DRIVER:= libRSDriver_adreno.so
 # Include path
 TARGET_SPECIFIC_HEADER_PATH := $(PLATFORM_PATH)/include
 
-# Init
-TARGET_UNIFIED_DEVICE := true
-TARGET_INIT_VENDOR_LIB := libinit_msm
-TARGET_PLATFORM_DEVICE_BASE := /devices/soc.0/
-TARGET_LIBINIT_DEFINES_FILE := $(PLATFORM_PATH)/init/init_oneplus2.cpp
-
 # Keystore
 TARGET_PROVIDES_KEYMASTER := true
 
