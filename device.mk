@@ -278,4 +278,4 @@ PRODUCT_PACKAGES += \
     hostapd.deny
 
 # Inherit from oppo-common
--include device/oppo/common/BoardConfigCommon.mk
+-include device/oppo/common/common.mk
