@@ -1,6 +1,6 @@
 [
   {
-    "repository": "android_device_oppo_common",
+    "repository": "Seraph08/android_device_oppo_common",
     "target_path": "device/oppo/common"
   },
   {
