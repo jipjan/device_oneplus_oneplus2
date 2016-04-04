@@ -10,7 +10,7 @@
     "revision": "cm-13.0"
   },
   {
-    "repository": "android_device_oppo_common",
+    "repository": "android_device_qom_common",
     "target_path": "device/qcom/common",
     "revision": "cm-13.0"
   },
@@ -19,4 +19,4 @@
     "target_path": "vendor/oneplus",
     "revision": "cm-13.0"
   }
-]
+]   
