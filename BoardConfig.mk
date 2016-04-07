@@ -129,6 +129,10 @@ OVERRIDE_RS_DRIVER:= libRSDriver_adreno.so
 # Include path
 TARGET_SPECIFIC_HEADER_PATH := $(PLATFORM_PATH)/include
 
+# Init
+TARGET_UNIFIED_DEVICE := true
+TARGET_PLATFORM_DEVICE_BASE := /devices/soc.0/
+
 # Keystore
 TARGET_PROVIDES_KEYMASTER := true
 
