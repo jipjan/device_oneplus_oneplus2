@@ -12,7 +12,7 @@
   {
     "repository": "android_device_qcom_common",
     "target_path": "device/qcom/common",
-    "revision": "cm-13.0"
+    "revision": "stabble/cm-13.0-ZNH2K"
   },
   {
     "repository": "TheMuppets/proprietary_vendor_oneplus",
