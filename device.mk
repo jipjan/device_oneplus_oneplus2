@@ -104,7 +104,9 @@ PRODUCT_PACKAGES += \
 
 # Camera
 PRODUCT_PACKAGES += \
-    Snap
+    mm-qcamera-app \
+    SnapdragonCamera \
+    camera.msm8994
 
 # Charger
 PRODUCT_PACKAGES += \
@@ -277,3 +279,5 @@ PRODUCT_PACKAGES += \
     hostapd.accept \
     hostapd.deny
 
+# Inherit from oppo-common
+$(call inherit-product, device/oppo/common/common.mk)
