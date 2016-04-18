@@ -8,5 +8,9 @@
     "repository": "CyanogenMod/android_kernel_oneplus_msm8994",
     "target_path": "kernel/oneplus/msm8994",
     "revision": "cm-13.0"
-  }
+  },
+  {
+  "repository": "TheMuppets/proprietary_vendor_oneplus",
+  "target_path": "vendor/oneplus",
+  "revision": "cm-13.0"
 ]
