@@ -152,6 +152,7 @@
          This needs to match the constants in
          policy/src/com/android/internal/policy/impl/PhoneWindowManager.java
     -->
+    <add-resource type="integer" name="config_longPressOnAppSwitchBehavior"></add-resource>
     <integer name="config_longPressOnAppSwitchBehavior">1</integer>
 
     <!-- Boolean indicating whether the wifi chipset has dual frequency band support -->
