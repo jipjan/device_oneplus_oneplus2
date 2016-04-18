@@ -13,4 +13,5 @@
   "repository": "TheMuppets/proprietary_vendor_oneplus",
   "target_path": "vendor/oneplus",
   "revision": "cm-13.0"
+  }
 ]
