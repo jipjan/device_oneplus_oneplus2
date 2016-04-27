@@ -20,7 +20,7 @@
 # definition file).
 #
 
-# Inherit from oppo-common		
+# Inherit from oppo-common
 -include device/oppo/common/BoardConfigCommon.mk
 
 TARGET_OTA_ASSERT_DEVICE := OnePlus2,oneplus2
@@ -28,9 +28,6 @@ TARGET_OTA_ASSERT_DEVICE := OnePlus2,oneplus2
 PLATFORM_PATH := device/oneplus/oneplus2
 
 BOARD_VENDOR := oneplus
-
-# Assertions
-TARGET_BOARD_INFO_FILE ?= $(PLATFORM_PATH)/board-info.txt
 
 # Bootloader
 TARGET_BOOTLOADER_BOARD_NAME := MSM8994
@@ -52,7 +49,7 @@ TARGET_2ND_ARCH := arm
 TARGET_2ND_ARCH_VARIANT := armv7-a-neon
 TARGET_2ND_CPU_ABI := armeabi-v7a
 TARGET_2ND_CPU_ABI2 := armeabi
-TARGET_2ND_CPU_VARIANT := cortex-a53.a57
+TARGET_2ND_CPU_VARIANT := cortex-a53
 
 TARGET_CPU_CORTEX_A53 := true
 
@@ -60,7 +57,7 @@ TARGET_BOARD_SUFFIX := _64
 TARGET_USES_64_BIT_BINDER := true
 
 # Kernel
-BOARD_KERNEL_CMDLINE := androidboot.hardware=qcom user_debug=31 msm_rtb.filter=0x37 ehci-hcd.park=3 lpm_levels.sleep_disabled=1 boot_cpus=0-5
+BOARD_KERNEL_CMDLINE := androidboot.hardware=qcom user_debug=31 msm_rtb.filter=0x37 ehci-hcd.park=3 lpm_levels.sleep_disabled=1 boot_cpus=0-5 androidboot.selinux=permissive
 BOARD_KERNEL_BASE := 0x00000000
 BOARD_KERNEL_PAGESIZE := 4096
 BOARD_KERNEL_SEPARATED_DT := true
@@ -79,7 +76,7 @@ TARGET_USES_UNCOMPRESSED_KERNEL := true
 BOARD_USES_QCOM_HARDWARE := true
 
 # ANT+
-BOARD_ANT_WIRELESS_DEVICE := "qualcomm-uart"
+#BOARD_ANT_WIRELESS_DEVICE := "vfs-prerelease"
 
 # Audio
 AUDIO_FEATURE_ENABLED_ACDB_LICENSE := true
@@ -105,9 +102,8 @@ USE_DEVICE_SPECIFIC_CAMERA := true
 BOARD_CHARGER_DISABLE_INIT_BLANK := true
 BOARD_HEALTHD_CUSTOM_CHARGER_RES := $(PLATFORM_PATH)/charger/images
 
-# CNE and DPM
-TARGET_LDPRELOAD := libNimsWrap.so
-BOARD_USES_QCNE := true
+# Font
+EXTENDED_FONT_FOOTPRINT := true
 
 # Cpusets
 ENABLE_CPUSETS := true
@@ -115,9 +111,6 @@ ENABLE_CPUSETS := true
 # GPS
 TARGET_NO_RPC := true
 USE_DEVICE_SPECIFIC_GPS := true
-
-# Crypto
-TARGET_HW_DISK_ENCRYPTION := true
 
 # Graphics
 NUM_FRAMEBUFFER_SURFACE_BUFFERS := 3
@@ -153,9 +146,6 @@ TARGET_RIL_VARIANT := caf
 # RPC
 TARGET_NO_RPC := true
 
-# Sensors
-USE_SENSOR_MULTI_HAL := true
-
 # Enable dexpreopt to speed boot time
 ifeq ($(HOST_OS),linux)
   ifeq ($(call match-word-in-list,$(TARGET_BUILD_VARIANT),user),true)
@@ -177,12 +167,7 @@ TARGET_USES_WCNSS_CTRL := true
 TARGET_USES_QCOM_WCNSS_QMI := true
 WIFI_DRIVER_FW_PATH_AP := "ap"
 WIFI_DRIVER_FW_PATH_STA := "sta"
-WIFI_DRIVER_FW_PATH_P2P := "p2p"
 WPA_SUPPLICANT_VERSION := VER_0_8_X
-CONFIG_EAP_PROXY := qmi
-CONFIG_EAP_PROXY_DUAL_SIM := true
-CONFIG_EAP_PROXY_AKA_PRIME := true
-CONFIG_EAP_PROXY_MSM8994_TARGET := true
 
 # Partitions
 BOARD_BOOTIMAGE_PARTITION_SIZE := 67108864
