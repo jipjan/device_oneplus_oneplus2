@@ -2,8 +2,8 @@
 
 ro.build.product=OnePlus2
 ro.product.device=OnePlus2
-ro.build.description=OnePlus2-user 6.0.1 MHC19Q 59 dev-keys
-ro.build.fingerprint=OnePlus2/OnePlus2/OnePlus2:6.0.1/MHC19Q/59:user/dev-keys
+ro.build.description=OnePlus2-user 6.0.1 MOB30D 59 dev-keys
+ro.build.fingerprint=OnePlus2/OnePlus2/OnePlus2:6.0.1/MOB30D/59:user/dev-keys
 
 # RIL
 rild.libpath=/vendor/lib64/libril-qc-qmi-1.so
