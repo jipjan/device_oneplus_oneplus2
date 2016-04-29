@@ -21,10 +21,8 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit from oneplus2 device
 $(call inherit-product, device/oneplus/oneplus2/device.mk)
 
-PRODUCT_NAME := broken_oneplus2
+PRODUCT_NAME := aosp_oneplus2
 PRODUCT_DEVICE := oneplus2
 PRODUCT_MANUFACTURER := OnePlus
 PRODUCT_MODEL := oneplus2
 PRODUCT_BRAND := OnePlus
-
-PRODUCT_GMS_CLIENTID_BASE := android-oneplus

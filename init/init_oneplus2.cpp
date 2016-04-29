@@ -46,6 +46,7 @@ void init_msm_properties(unsigned long msm_id, unsigned long msm_ver, char *boar
     UNUSED(board_type);
 
     rc = property_get("ro.board.platform", device);
+
     if (!rc || !ISMATCH(device, "oneplus2"))
         return;
 
