@@ -1,9 +1,9 @@
 [
   {
     "remote": "github",
-    "repository": "SlimRoms/device_oppo_common",
+    "repository": "BrokenROM/device_oppo_common",
     "target_path":  "device/oppo/common",
-    "revision": "mm6.0"
+    "revision": "m6.0"
   },
   {
     "remote": "github",
