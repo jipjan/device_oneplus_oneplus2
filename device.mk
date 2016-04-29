@@ -116,8 +116,10 @@ PRODUCT_PACKAGES += \
     libqcomvoiceprocessing
 
 # Camera
-#PRODUCT_PACKAGES += \
-#   Snap
+PRODUCT_PACKAGES += \
+    mm-qcamera-app \
+    SnapdragonCamera \
+    camera.msm8994
 
 # Charger
 PRODUCT_PACKAGES += \
