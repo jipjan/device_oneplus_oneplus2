@@ -20,8 +20,6 @@
 # definition file).
 #
 
-# Inherit from oppo-common
--include device/oppo/common/BoardConfigCommon.mk
 
 TARGET_OTA_ASSERT_DEVICE := OnePlus2,oneplus2
 
@@ -76,7 +74,7 @@ TARGET_USES_UNCOMPRESSED_KERNEL := true
 BOARD_USES_QCOM_HARDWARE := true
 
 # ANT+
-#BOARD_ANT_WIRELESS_DEVICE := "qualcomm-uart"
+BOARD_ANT_WIRELESS_DEVICE := "vfs-prerelease"
 
 # Audio
 AUDIO_FEATURE_ENABLED_ACDB_LICENSE := true
