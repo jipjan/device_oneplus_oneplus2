@@ -22,5 +22,12 @@
     "repository": "TheMuppets/proprietary_vendor_oneplus",
     "target_path":  "vendor/oneplus",
     "revision": "cm-13.0"
-  }
+  },
+  {
+    "remote": "github",
+    "repository": "Cyanogenmod/android_vendor_qcom_opensource_dataservices",
+    "target_path": "vendor/qcom/opensource/dataservices",
+    "branch": "cm-13.0"
+  }  
+
 ]
