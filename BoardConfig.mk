@@ -213,6 +213,7 @@ BOARD_SEPOLICY_DIRS += $(PLATFORM_PATH)/sepolicy
 BOARD_USES_QC_TIME_SERVICES := true
 
 # CM Hardware
+TARGET_KEYMASTER_WAIT_FOR_QSEE := true
 BOARD_HARDWARE_CLASS += $(PLATFORM_PATH)/cmhw
 TARGET_TAP_TO_WAKE_NODE := "/proc/touchpanel/double_tap_enable"
 
