@@ -45,7 +45,8 @@ void init_msm_properties(unsigned long msm_id, unsigned long msm_ver, char *boar
     UNUSED(msm_ver);
     UNUSED(board_type);
 
-    rc = property_get("ro.cm.device", device);
+    rc = property_get("ro.board.platform", device);
+
     if (!rc || !ISMATCH(device, "oneplus2"))
         return;
 
@@ -65,4 +66,3 @@ void init_msm_properties(unsigned long msm_id, unsigned long msm_ver, char *boar
         property_set("ro.rf_version", "TDD_FDD_Am");
     }
 }
-
